@@ -1,0 +1,585 @@
+/*Para el cuerpo de la web*/
+body{
+	
+	font-family: verdana;
+	
+}
+
+/* Sección para el navbar*/
+nav {
+    margin:0;
+    overflow: hidden;
+    background: #313742;
+    position: fixed; /* En la posición fija en la parte principal */
+    top: 0; /* Para dejarla al tope */
+    left:0; /* Para dejarla al tope */
+    width: 100%; /* Porcentaje de tamaño respecto a la horizontal*/
+    z-index: 90;
+	
+    
+}	
+
+	/* El formato de los links dentro de la navbar */
+	nav a {
+	    float: left;
+	    display: block;
+	    color: #FFFFFF;
+	    text-align: center; 
+	    padding: 15px 15px;
+	    text-decoration: none;
+	    font-family: verdana;
+	}
+	nav a:hover{
+	  background: #4e5467;
+
+	}
+	nav img{
+	  height: 40px;
+	  width: 40px;
+	  float:left;
+	  padding-top: 5px;
+
+	}	
+
+
+
+
+/*La sección de opciones*/
+aside {
+	position: fixed;
+	top:39px;
+	left: -15px;
+	width: 200px;
+    border: 1px solid #DADADA;
+    padding: 20px;
+    margin-left: 50px;
+    margin: 10px;
+    display: block;
+    height: 100%;
+	background:  #F5F6F7;
+ 	box-shadow: 3px 0px 9px 0px rgba(0,0,0,0.39);
+}
+
+	input[type=text] {
+	    width: 100%;
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    box-sizing: border-box;
+	    border: 3px solid #ccc;
+	    -webkit-transition: 0.5s;
+	    transition: 0.5s;
+	    outline: none;
+	    border-radius: 25px;
+	}
+	input[type=text]:hover {
+	    border: 3px solid #555;
+	    border-radius: 0px;
+	    background-color: #E3E6E9;
+
+	}
+	input[type=text]:focus {
+	    border: 3px solid #555;
+	    border-radius: 0px;
+	    background-color: #E3E6E9;
+
+	}
+
+	input[type=checkbox] {
+	display:none;
+	}
+	aside select {
+		width: 160px;
+		height: 34px;
+		overflow: hidden;
+		background: url("./recursos/libs/flecha.svg") no-repeat;
+		background-position: 95% 50%;
+		background-size: 20px;
+		border: 1px solid #ccc;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+	}
+	input#borrar {
+		height: 20px;
+		width: 20px;
+		padding-right: 10px;
+		margin-bottom: -4px;
+		margin-top: 5px;
+	}
+
+	input[type=checkbox] + label {
+		opacity: 0.4;
+		cursor:pointer; /*Para que sea una mano cuando en cada uno de los checboxes*/
+	}
+
+	input[type=checkbox]:checked + label{
+		opacity: 1;
+		
+	}
+
+	input[type="checkbox"]:checked {
+	display: none;
+	width: 60px;
+	}
+	#tablita{
+		margin-left: -10px;
+		border-spacing: 5px;
+
+
+	}
+	#tablita tr {
+		text-align: center;
+	}
+	#tablita th {
+		width: 100px;
+		font-weight: 100;
+
+	}
+	.etiquetas{
+		width: 85%;
+		display: inline-block;
+		overflow: visible;
+
+	}
+
+	#ac{
+		border-radius: 5px;
+		background-color: #B8B8D0;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 10px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ag{
+		border-radius: 5px;
+		background-color: #6890F0;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#bi{
+		border-radius: 5px;
+		background-color: #A8B820;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#dr{
+		border-radius: 5px;
+		background-color: #7038F8;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		
+	}
+	#el{
+		border-radius: 5px;
+		background-color: #F8D030;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#fa{
+		border-radius: 5px;
+		background-color: #705898;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#fu{
+		border-radius: 5px;
+		background-color: #F08030;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ha{
+		border-radius: 5px;
+		background-color: #EE99AC;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#hi{
+		border-radius: 5px;
+		background-color: #98D8D8;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#lu{
+		border-radius: 5px;
+		background-color: #C03028;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#no{
+		border-radius: 5px;
+		background-color: #A8A878;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#pl{
+		border-radius: 5px;
+		background-color: #78C850;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ps{
+		border-radius: 5px;
+		background-color: #F85888;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ro{
+		border-radius: 5px;
+		background-color: #B8A038;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#si{
+		border-radius: 5px;
+		background-color: #705848;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ti{
+		border-radius: 5px;
+		background-color: #E0C068;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#ve{
+		border-radius: 5px;
+		background-color: #A040A0;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#vo{
+		border-radius: 5px;
+		background-color: #A890F0;
+		font-family: verdana;
+		color:#FFFFFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid black;
+		margin-right: 4px;
+		margin-left: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+
+
+
+article{
+	margin-top: 65px;
+	width: 80%;
+	min-width: 500px;
+	padding-left: 250px;
+	
+	
+}
+	section{
+
+		float: left;
+	
+		border-radius: 25px;
+		
+		margin: 10px;
+		width: 200px;
+		height: 320px;
+	    border: 1px solid #DADADA;
+ 		box-shadow: 3px 0px 9px 0px rgba(0,0,0,0.39);
+	}
+
+
+
+	.mediano {
+		margin-left: 50px;
+		margin-top: 30px;
+	}
+	.name{
+
+		float: left;
+		margin-left: 12px;
+		margin-top: 5px;
+		color:white;		
+		text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+		letter-spacing: 2px;	
+		font-weight: bold;
+	}
+
+	.number{
+		font-family: 'Enriqueta', arial, serif; 
+		float: right;
+		margin-right: 10px;
+		margin-top: 5px;
+		color:white;		
+		text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+		letter-spacing: 2px;
+		 font-weight: bold;
+	}
+
+	.actual{
+		margin-left: 15px;
+		height: 40px;
+		vertical-align: text-top;
+		transition: all .2s ease-in-out;
+	}
+	.actual:hover .texto{
+		opacity: 1;
+
+
+	}
+	.actual:hover{
+		transform: scale(1.1)
+	}
+	
+	.evol{
+		margin-left: 15px;
+		height: 40px;
+		vertical-align: text-top;
+		opacity:0.5;
+		transition: all .2s ease-in-out;
+	}
+	.evol:hover{
+		opacity:1;
+		transform: scale(1.1)
+	}
+	.evol:hover .texto{
+		opacity:1;
+	
+	}
+
+
+	.imgactual{
+		vertical-align: text-top;
+
+	}
+	
+	.imgevol{
+		vertical-align: text-top;
+		opacity: 0.5;
+
+	}
+	.imgevol{
+
+		opacity: 1;
+
+	}
+
+	.texto{
+		font-family: verdana;
+		font-size: 0.75em;
+		display: inline-block;
+		opacity: 0;
+
+
+		
+	}
+
+
+
+
+
+	#popup{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	    width: 450px;
+		position: fixed;
+		background-color: #FFFFFF;
+		z-index: 100;
+		text-align: left;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		margin-left: 23px;
+
+		padding-right: 20px;
+	}
+
+
+
+/* IMPLEMENTACIÓN DE VERSIÓN MÓVIL*/
+@media screen and (max-width: 500px){
+
+	aside{
+		top:70px;
+		position:relative;
+		width: 100%;
+		margin-left: -5px;
+		
+		
+	}	#tablita{
+		margin-left: 40px;
+		border-spacing: 5px;
+
+
+		}	aside select {
+		width: 160px;
+		height: 34px;
+		overflow: hidden;
+		background: url("./recursos/libs/flecha.svg") no-repeat;
+		background-position: 95% 50%;
+		background-size: 20px;
+		border: 1px solid #ccc;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		margin-left: 50px;
+	}
+	article{
+		margin-top: 100px;
+		width: 100%;
+		min-width: 100px;
+		padding-left: 0px;
+		padding-right: 0px;
+		text-align: center;
+			
+	}
+	
+	.evol {
+		height:30px;
+	}
+	.actual{
+		height: 30px;
+	}
+
+
+
+	#stats{
+		width: 100px;
+		position: fixed;
+
+	}
+	nav {
+	    margin:0;
+	    overflow: hidden;
+	    background: #313742;
+	    position: fixed; /* En la posición fija en la parte principal */
+	    top: 0; /* Para dejarla al tope */
+	    left:0; /* Para dejarla al tope */
+	    width: 100%; /* Porcentaje de tamaño respecto a la horizontal*/
+	    z-index: 90;
+	
+    
+	}	
+
+		/* El formato de los links dentro de la navbar */
+		nav a {
+		    float: right;
+		    width: 80%;
+		    display: inline-block;
+		    color: #FFFFFF;
+		    text-align: center; 
+		    padding: 10px 10px;
+		    text-decoration: none;
+		    font-family: verdana;
+		}
+		nav a:hover{
+		  background: #4e5467;
+
+		}
+		nav img{
+			margin-top: 8px;
+			height: 60px;
+			width: 60px;
+			position: absolute;
+			padding-top: 5px;
+			z-index: 100;
+
+		}	
+}
+
+/*IMPLEMENTACIÓN DE KEYFRAMES para animaciones si las hubiere*/
